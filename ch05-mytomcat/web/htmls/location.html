@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+
+    window.onload = function (){
+        let imgDyn = document.getElementById("imgDyn");
+        imgDyn.onclick = function (){
+            let time = new Date().getTime();
+            imgDyn.src="/mytomcat/responseDemo1?"/*+time*/;
+        }
+    }
+
+</script>
+
+<body>
+
+<img id="imgDyn" src="/mytomcat/responseDemo1" />
+
+</body>
+</html>
